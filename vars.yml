@@ -32,4 +32,4 @@
       # acessing fact variables from maps
   - name : print fqdn
       ansible.builtin.debug :
-        msg : {{ ansible_fqdn}}
+        msg : "{{ ansible_fqdn}}"
