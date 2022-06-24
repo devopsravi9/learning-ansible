@@ -21,7 +21,7 @@
   tasks:
     - name: print URL
       ansible.builtin.debug:
-        msg: url is {{ URL }}
+        #msg: url is {{ URL }}
 
 - name : fact & magic level variables
   hosts : localhost
