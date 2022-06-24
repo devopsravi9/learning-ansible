@@ -53,7 +53,7 @@
     # the output is a map let acess only one particular key from that map"
     #  msg : "{{output.stdout}}"
 
-// to bypass password during operation we can give it on command line
+#  to bypass password during operation we can give it on command line
 # -e ansible_user=centos
 # -e ansible_password=DevOps321
-// you can get above from ansible special variables section
+# you can get above from ansible special variables section
