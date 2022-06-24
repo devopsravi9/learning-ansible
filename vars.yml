@@ -28,4 +28,4 @@
   tasks :
   - name : print hostname
     ansible.builtin.debug :
-      msg : hostname is {{ ansible_hostname }}
+      msg : hostname is {{ ansible_hostname }} menory {{ansible_memory_mb.real.free}}
