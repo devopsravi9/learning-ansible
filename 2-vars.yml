@@ -3,7 +3,15 @@
     vars:
       URL: the.example.com
     tasks:
-    - name: print URL
-      ansible.builtin.debug:
-        msg: url is {{ URL }}
+      - name: print URL
+        ansible.builtin.debug:
+          msg: url is {{ URL }}
 
+  - name : vars from files
+    hosts : localhost
+    vars_file :
+      - demo-vars.yml
+    tasks :
+      - name : print URL
+        ansible.builtin.debug :
+          msg : url is {{ URL }}
