@@ -1,0 +1,36 @@
+inputs ; coursename , trainname, timings, mobilenumbers
+
+### XML MARKUP LANGUAGE
+
+<coursename>devops</coursename>
+<trainename>raghu</trainename>
+<timings>
+    <ist>600am</ist>
+    <ust>700pm</ust>
+</timings>
+<mobilenumbers>999,888</mobilenumbers>
+
+### JSON MARKUP LANGUAGE
+
+{
+    "coursename" : "devops",
+    "trainename" : "raghu",
+    "timings" : {
+        "ist" : "600am",
+        "est" : "800pm"
+    },
+    "mobilenumber" : [999, 888]
+}
+
+### YAML MARKUP LANGUAGE
+
+  coursename : devops
+  trainename : raghu
+  timings :
+    ist : 600am
+    est : 800am
+  mobilenumber :
+    -999
+    -888
+  mbilenum : [ "999", "888"]
+  timing : { ist : [ "600am", '700am' ], est : 800pm}
