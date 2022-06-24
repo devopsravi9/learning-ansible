@@ -29,3 +29,5 @@
   - name : print hostname
     ansible.builtin.debug :
       msg : hostname is {{ ansible_hostname }} menory {{ansible_memory_mb.real.free}}
+
+# acessing fact variables from maps
