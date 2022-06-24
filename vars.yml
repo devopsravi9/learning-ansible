@@ -16,9 +16,9 @@
     vars :
       URL : task.example.com
 
-- name: task level variables
+- name: inventory level variables
   hosts: localhost
   tasks:
-  - name: print URL
-    ansible.builtin.debug:
-      msg: url is {{ URL }}
+    - name: print URL
+      ansible.builtin.debug:
+        msg: url is {{ URL }}
