@@ -1,4 +1,4 @@
-- name: play level variables
+  - name: play level variables
     hosts: localhost
     vars:
       URL: the.example.com
