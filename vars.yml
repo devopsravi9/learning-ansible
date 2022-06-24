@@ -33,3 +33,4 @@
   - name : print fqdn
     ansible.builtin.debug :
       msg : "{{ ansible_fqdn}}"
+      # if any value starts with variable we should use double quote
