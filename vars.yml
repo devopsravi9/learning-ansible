@@ -45,7 +45,7 @@
     # any module output can store with a variable using "redister" key.
     register: output
   - name: print output of shell command
-    ansible.buitin.debug
+    ansible.buitin.debug:
       msg : "{{ output}}"
     # the output is a map let acess only one particular key from that map"
       msg : "{{output.stdout}}"
