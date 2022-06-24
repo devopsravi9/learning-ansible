@@ -1,9 +1,9 @@
--name: intro to ansible-palybook
-  hosta: all
+- name: intro to ansible-palybook
+  hosts: all
   tasks:
-    -name: print hello
-      ansible.builtin.debug
+    - name: print hello
+      ansible.builtin.debug:
       msg: hello
-    -name: print fruit
-      debug
+    - name: print fruit
+      debug:
       msg: apple
