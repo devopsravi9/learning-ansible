@@ -44,8 +44,16 @@
     ansible.builtin.shell : uptime
     # any module output can store with a variable using "redister" key.
     register: output
+  - name: store variable in standard name
+    ansible.builtin.set_fact:
+      UPTIME= "{{output}}"
   - name: print output of shell command
     ansible.builtin.debug:
-      msg : "{{ output}}"
+      msg : "{{ UPTIME}}"
     # the output is a map let acess only one particular key from that map"
     #  msg : "{{output.stdout}}"
+
+// to bypass password during operation we can give it on command line
+# -e ansible_user=centos
+# -e ansible_password=DevOps321
+// you can get above from ansible special variables section
