@@ -28,4 +28,4 @@
   tasks :
   - name : print hostname
     ansible.builtin.debug :
-      msg : hostname is {{ ansible_localhost }}
+      msg : hostname is {{ ansible_hostname }}
