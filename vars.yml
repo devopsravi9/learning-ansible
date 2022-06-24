@@ -48,4 +48,4 @@
     ansible.builtin.debug:
       msg : "{{ output}}"
     # the output is a map let acess only one particular key from that map"
-      msg : "{{output.stdout}}"
+    #  msg : "{{output.stdout}}"
