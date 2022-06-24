@@ -44,12 +44,14 @@
     ansible.builtin.shell : uptime
     # any module output can store with a variable using "redister" key.
     register: output
+
   - name: store variable in standard name
     ansible.builtin.set_fact:
       UPTIME= "{{output}}"
+
   - name: print output of shell command
     ansible.builtin.debug:
-      msg : "{{ UPTIME}}"
+      msg: "{{UPTIME}}"
     # the output is a map let acess only one particular key from that map"
     #  msg : "{{output.stdout}}"
 
