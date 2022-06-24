@@ -9,7 +9,7 @@
 
   - name : vars from files
     hosts : localhost
-    vars_file :
+    vars_files :
       - demo-vars.yml
     tasks :
       - name : print URL
