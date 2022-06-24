@@ -1,4 +1,4 @@
-  - name: play level variables
+- name: play level variables
     hosts: localhost
     vars:
       URL: the.example.com
@@ -7,9 +7,9 @@
       ansible.builtin.debug:
         msg: url is {{ URL }}
 
-  - name : vars from files
-      hosts : localhost
-      vars_file :
+    - name: vars from files
+      hosts: localhost
+      vars_file:
       - demo-vars.yml
       tasks :
       - name : print URL
