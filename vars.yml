@@ -34,3 +34,18 @@
     ansible.builtin.debug :
       msg : "{{ ansible_fqdn}}"
       # if any value starts with variable we should use double quote
+
+# giving the output of command to variaable and then acessing it ( like command substitution)
+- name: register variables
+  hosts: localhost
+  tasks:
+  - name : Execute the command in remote shell; stdout goes to the specified file on the remote
+    # search for shell command in google and get it from there
+    ansible.builtin.shell : uptime
+    # any module output can store with a variable using "redister" key.
+    register: output
+  - name: print output of shell command
+    ansible.buitin.debug
+      msg : "{{ output}}"
+    # the output is a map let acess only one particular key from that map"
+      msg : "{{output.stdout}}"
