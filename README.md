@@ -1,9 +1,12 @@
-- name: intro to ansible-palybook
+- name: Intro to playbook
   hosts: all
   tasks:
-    - name: print hello
-      ansible.builtin.debug:
-      msg: hello
-    - name: print fruit
-      debug:
-      msg: apple
+  - name: Print Helloo
+    ansible.builtin.debug:
+    msg: Hello
+  - name: Print Fruit
+    debug:
+    msg: Apple
+# name is an optional key , but we alwyas use as a best practice
+# ansible.buitin.debug is a collection , this is supported from 2.10 version, this is future, So we will use this
+# debug is module , this is supported only till 2.9 version , this will soon deprecate, We will not consider this usage
