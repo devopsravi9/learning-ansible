@@ -48,7 +48,7 @@
 
   - name: store variable in standard name
     ansible.builtin.set_fact:
-      UPTIME= "{{output}}"
+      UPTIME: "{{output}}"
 
   - name: print output of shell command
     ansible.builtin.debug:
