@@ -42,9 +42,9 @@
   - name : Execute the command in remote shell; stdout goes to the specified file on the remote
     # search for shell command in google and get it from there
     ansible.builtin.shell : uptime
-    # any module output can store with a variable using "redister" key.
+    # any module output can store with a variable using "register" key.
     register: output
-    msg: "{{output}}"
+      msg: is "{{output}}"
 
   - name: store variable in standard name
     ansible.builtin.set_fact:
