@@ -8,11 +8,11 @@
     # it  is accessing url directly from defaults
 
 - name: copy file
-    ansible.builtin.copy:
-      src: sample.txt
-      dest: /tmp/sample-file.txt
+  ansible.builtin.copy:
+    src: sample.txt
+    dest: /tmp/sample-file.txt
 
 - name: template a file
-    ansible.builtin.template:
-      src: sample.txt
-      dest: /tmp/sample-file.txt
+  ansible.builtin.template:
+    src: sample.txt
+    dest: /tmp/sample-file.txt
