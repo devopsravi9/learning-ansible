@@ -2,7 +2,7 @@
   ansible.builtin.debug:
     msg: Hello
 
-#- name: print URL
-#  ansible.builtin.debug:
-#    msg: URL is {{URL}}
+- name: print URL
+  ansible.builtin.debug:
+    msg: URL is {{URL}}
     # it  is accessing url directly from defaults
