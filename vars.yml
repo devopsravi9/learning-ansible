@@ -44,7 +44,10 @@
     ansible.builtin.shell : uptime
     # any module output can store with a variable using "register" key.
     register: output
-      msg: is "{{output}}"
+
+  - name: print output
+    ansible.builtin.debug:
+      msg: "{{output}}"
 
   - name: store variable in standard name
     ansible.builtin.set_fact:
