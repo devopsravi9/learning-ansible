@@ -1,0 +1,10 @@
+- name: demo for loops
+  hosts: localhost
+  tasks:
+  - name: loop through list
+    debug:
+      msg: fruit = {{item}}
+      # list item are accessed by fact variable item
+    loop:
+      - apple
+      - orange
