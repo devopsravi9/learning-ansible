@@ -21,6 +21,6 @@
     ec2_instance_facts :
       filters :
         availability-zone : US East (N. Virginia).
-      instance_ids :
-        - i-043b4a9eec60e989f
+        instance_ids :
+          - i-043b4a9eec60e989f
 
