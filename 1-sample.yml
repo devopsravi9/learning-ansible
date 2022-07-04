@@ -1,14 +1,21 @@
-- name: Intro to playbook
-  hosts: localhost
-#  vars:
-#    IP_ADDRESS: "{{ansible_default_ipv4.address}}"
+#- name: Intro to playbook
+#  hosts: localhost
+##  vars:
+##    IP_ADDRESS: "{{ansible_default_ipv4.address}}"
+#  tasks:
+#  - name: Print Helloo
+#    ansible.builtin.debug:
+#      msg: "{{ ansible_default_ipv4 }}"
+#  - name: Print Fruit
+#    debug:
+#      msg: Apple
+## name is an optional key , but we alwyas use as a best practice
+## ansible.buitin.debug is a collection , this is supported from 2.10 version, this is future, So we will use this
+## debug is module , this is supported only till 2.9 version , this will soon deprecate, We will not consider this usage
+
+
+- name: get instance details
+  hosta: localhost
   tasks:
-  - name: Print Helloo
-    ansible.builtin.debug:
-      msg: "{{ ec2_instance_facts }}"
-  - name: Print Fruit
-    debug:
-      msg: Apple
-# name is an optional key , but we alwyas use as a best practice
-# ansible.buitin.debug is a collection , this is supported from 2.10 version, this is future, So we will use this
-# debug is module , this is supported only till 2.9 version , this will soon deprecate, We will not consider this usage
+    - name: print insatnce details
+      ec2_instance_facts:
