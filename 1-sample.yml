@@ -18,6 +18,7 @@
   hosts: localhost
   tasks:
   - name: print insatnce details
-    ec2_instance_facts:
-      instance_ids: i-043b4a9eec60e989f
+    ec2_instance_facts :
+      instance_ids :
+        - i-043b4a9eec60e989f
 
