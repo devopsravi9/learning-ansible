@@ -17,7 +17,7 @@
 - name: get instance details
   hosta: localhost
   tasks:
-    - name: print insatnce details
-      ec2_instance_facts:
-        filters :
-          availability-zone : i-043b4a9eec60e989f
+  - name: print insatnce details
+    ec2_instance_facts:
+      filters :
+        availability-zone : i-043b4a9eec60e989f
