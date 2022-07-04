@@ -1,9 +1,11 @@
 - name: Intro to playbook
   hosts: all
+  vars:
+    IP_ADDRESS: "{{ansible_default_ipv4.address}}"
   tasks:
   - name: Print Helloo
     ansible.builtin.debug:
-      msg: Hello
+      msg: "{{ IP_ADDRESS }}"
   - name: Print Fruit
     debug:
       msg: Apple
