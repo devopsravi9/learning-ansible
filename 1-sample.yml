@@ -5,7 +5,7 @@
   tasks:
   - name: Print Helloo
     ansible.builtin.debug:
-      msg: "{{ ansible_default_ipv4 }}"
+      msg: "{{ ec2_instance_facts }}"
   - name: Print Fruit
     debug:
       msg: Apple
