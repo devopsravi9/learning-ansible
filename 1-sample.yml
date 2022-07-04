@@ -15,7 +15,7 @@
 
 
 - name: get instance details
-  hosta: localhost
+  hosts: localhost
   tasks:
   - name: print insatnce details
     ec2_instance_facts:
