@@ -1,5 +1,5 @@
 - name: Intro to playbook
-  hosts: all
+  hosts: localhost
   vars:
     IP_ADDRESS: "{{ansible_default_ipv4.address}}"
   tasks:
